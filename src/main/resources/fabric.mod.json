@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "eutiers",
+  "version": "${version}",
+  "name": "EU Tiers Tagger",
+  "description": "Shows EU Tierlist tiers next to player names, in the tab list, and via the /eutiers command. Reads data from your Discord bot's web endpoint.",
+  "authors": [
+    "EU Tierlist"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/eutiers/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.eutiers.tagger.EuTiersClient"
+    ]
+  },
+  "mixins": [
+    "eutiers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

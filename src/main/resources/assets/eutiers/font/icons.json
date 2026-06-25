@@ -1,0 +1,13 @@
+{
+  "providers": [
+    { "type": "bitmap", "file": "eutiers:font/eu.png",      "ascent": 7, "height": 8, "chars": ["\uE000"] },
+    { "type": "bitmap", "file": "eutiers:font/sword.png",   "ascent": 7, "height": 8, "chars": ["\uE001"] },
+    { "type": "bitmap", "file": "eutiers:font/axe.png",     "ascent": 7, "height": 8, "chars": ["\uE002"] },
+    { "type": "bitmap", "file": "eutiers:font/mace.png",    "ascent": 7, "height": 8, "chars": ["\uE003"] },
+    { "type": "bitmap", "file": "eutiers:font/uhc.png",     "ascent": 7, "height": 8, "chars": ["\uE004"] },
+    { "type": "bitmap", "file": "eutiers:font/pot.png",     "ascent": 7, "height": 8, "chars": ["\uE005"] },
+    { "type": "bitmap", "file": "eutiers:font/nethpot.png", "ascent": 7, "height": 8, "chars": ["\uE006"] },
+    { "type": "bitmap", "file": "eutiers:font/smp.png",     "ascent": 7, "height": 8, "chars": ["\uE007"] },
+    { "type": "bitmap", "file": "eutiers:font/crystal.png", "ascent": 7, "height": 8, "chars": ["\uE008"] }
+  ]
+}
