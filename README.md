@@ -59,7 +59,7 @@ Tras el primer arranque se crea:
 
 ```jsonc
 {
-  "baseUrl": "https://YOUR-BOT-URL.up.railway.app",
+  "baseUrl": "http://eutierlist.hatenna.com:25332/",
   "showOnNametags": true,
   "showInTabList": true,
   "displayMode": "HIGHEST",
