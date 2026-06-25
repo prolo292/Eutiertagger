@@ -2,6 +2,7 @@ package com.eutiers.tagger;
 
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
+import net.minecraft.text.StyleSpriteSource;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
 import net.minecraft.util.Identifier;
@@ -16,7 +17,8 @@ public final class TierFormat {
     private TierFormat() {}
 
     /** Custom bitmap font bundled in the mod (assets/eutiers/font/icons.json). */
-    public static final Identifier ICON_FONT = Identifier.of("eutiers", "icons");
+    public static final StyleSpriteSource.Font ICON_FONT =
+            new StyleSpriteSource.Font(Identifier.of("eutiers", "icons"));
 
     /** EU Tierlist logo glyph (shown to the left of the name). */
     public static final String EU_ICON = "\uE000";
