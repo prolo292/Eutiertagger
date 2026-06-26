@@ -88,7 +88,6 @@ public class EuTiersScreen extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
         net.minecraft.client.font.TextRenderer tr = MinecraftClient.getInstance().textRenderer;
         context.drawCenteredTextWithShadow(tr, this.title, this.width / 2, 20, 0xFFFFFF);
