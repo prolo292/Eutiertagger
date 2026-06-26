@@ -127,13 +127,14 @@ public final class TierFormat {
     /** EU logo shown to the left of the name (for tracked players). Null if disabled. */
     public static MutableText buildPrefix(PlayerTiers p, TierConfig cfg) {
         if (p == null || !cfg.showEuIcon) return null;
-        MutableText pre = Text.literal(EU_ICON)
-                .setStyle(Style.EMPTY.withFont(ICON_FONT).withColor(TextColor.fromRgb(0xFFFFFF)));
-        pre.append(Text.literal(" "));
+        MutableText pre = Text.empty();
+        pre.append(Text.literal(EU_ICON)
+                .setStyle(Style.EMPTY.withFont(ICON_FONT).withColor(TextColor.fromRgb(0xFFFFFF))));
+        pre.append(Text.literal(" ").setStyle(Style.EMPTY));
         return pre;
     }
 
-    /** Small colored tag appended to a name, e.g. " [HT4 <icon>]". Null if nothing to show. */
+    /** Small colored tag appended to a name, e.g. " HT4 <icon>". Null if nothing to show. */
     public static MutableText buildTag(PlayerTiers p, TierConfig cfg) {
         if (p == null) return null;
 
@@ -149,16 +150,14 @@ public final class TierFormat {
             if (code == null) return null;
         }
 
-        Style gray = Style.EMPTY.withColor(TextColor.fromRgb(0x808080));
-        MutableText tag = Text.literal(" [").setStyle(gray);
+        MutableText tag = Text.literal(" ");
         tag.append(Text.literal(code).setStyle(Style.EMPTY.withColor(TextColor.fromRgb(tierColor(code)))));
 
         MutableText modePart = modePart(mode, cfg);
         if (modePart != null) {
-            tag.append(Text.literal(" "));
+            tag.append(Text.literal(" ").setStyle(Style.EMPTY));
             tag.append(modePart);
         }
-        tag.append(Text.literal("]").setStyle(gray));
         return tag;
     }
 
